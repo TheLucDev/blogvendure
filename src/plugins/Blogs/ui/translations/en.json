@@ -1,0 +1,15 @@
+{
+    "blog": {
+        "filter-by-name": "Filter by blog name",
+        "add-new-blog": "Add New Blog",
+        "title": "Title",
+        "meta-name": "Meta name",
+        "type": "Blog type",
+        "slug": "Slug",
+        "sort-description": "Sort description",
+        "description": "Description",
+        "published": "Published",
+        "created": "Created",
+        "delete": "Are you sure you want to delete this post?"
+    }
+}

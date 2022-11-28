@@ -1,0 +1,60 @@
+<vdr-action-bar>
+  <vdr-ab-right>
+    <button
+      class="btn btn-primary"
+      id="custbtn"
+      *ngIf="which; else updateButton"
+      (click)="create()"
+      [disabled]="!(detailForm.valid && detailForm.dirty)"
+    >
+      {{ "common.create" | translate }}
+    </button>
+    <ng-template #updateButton>
+      <button
+        class="btn btn-primary"
+        id="editbtn"
+        (click)="save()"
+        [disabled]="!(detailForm.valid && detailForm.dirty)"
+      >
+        {{ "common.update" | translate }}
+      </button>
+    </ng-template>
+  </vdr-ab-right>
+</vdr-action-bar>
+
+<form class="form" [formGroup]="detailForm">
+  <vdr-form-field label="Code" for="price">
+    <input
+      id="price"
+      type="text"
+      formControlName="price"
+      [readonly]="!'UpdateSettings'"
+    />
+  </vdr-form-field>
+  <vdr-form-field label="Title" for="projectName">
+    <input
+      id="projectName"
+      type="text"
+      formControlName="projectName"
+      [readonly]="!'UpdateSettings'"
+    />
+  </vdr-form-field>
+
+  <vdr-form-field label="imageUrl" for="descriptions">
+    <input
+      id="descriptions"
+      type="text"
+      formControlName="descriptions"
+      [readonly]="!'UpdateSettings'"
+    />
+  </vdr-form-field>
+  <vdr-rich-text-editor label="Content" for="address">
+    <textarea
+      id="address"
+      formControlName="address"
+      [readonly]="!'UpdateSettings'"
+      style="width: 100%; height: 160px"
+    >
+    </textarea>
+  </vdr-rich-text-editor>
+</form>

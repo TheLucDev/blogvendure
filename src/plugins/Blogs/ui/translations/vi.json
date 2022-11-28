@@ -1,0 +1,15 @@
+{
+    "blog": {
+        "filter-by-name": "Tìm kiếm theo tên bài đăng",
+        "add-new-blog": "Thêm bài đăng mới",
+        "title": "Tiêu đề",
+        "meta-name": "Tên meta",
+        "type": "Loại bài đăng",
+        "slug": "đường dẫn",
+        "sort-description": "Mô tả ngắn",
+        "description": "Mô tả",
+        "published": "Phát hành",
+        "created": "Đã tạo",
+        "delete": "Bạn chắc chắn muốn xóa bài đăng này không?"
+    }
+}
